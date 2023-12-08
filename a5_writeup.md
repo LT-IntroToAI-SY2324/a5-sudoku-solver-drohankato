@@ -23,12 +23,14 @@ After completing the assignment, answer the following reflection questions:
 
 1. How do the performance and efficiency of the Depth-First Search (DFS) and Breadth-First Search (BFS) algorithms compare when solving Sudoku puzzles? In what scenarios might one approach be preferable over the other?
 
+Dfs might be preferred for use in a searching algorithm because of its characteristic deep search of a single brach, wheras Bfs might be preferred in a different type of search algorithm because of its exploration of all possibilities, level by level. Generally, i think the DFS searches performed more efficiently and found the answer using less moves than the BFS algorithm, but both varied heavily in tries per game. 
 
 
 2. How did the choice of data structures (like the Stack for DFS and Queue for BFS) impact the implementation and functionality of the algorithms? Are there alternative data structures or design patterns that could have been used to achieve the same objectives?
 
+the stack is necessary for the Dfs algorithm because it allows it to follow a last in, first out procedure which helps it in trying to fill the most contrained cell with as many values as possible while also allowing it to backtrack through its mistakes. the queue allows Bfs to search through each possibility all on the same level at the same time. double ended queues could work for bfs also, which may allow it to search faster by searching on each end of the qeueue. 
 
 
 3. Considering the current implementation, how might the Sudoku solver be adapted or extended for larger puzzles or different types of grid-based logic games? How can the lessons learned from this assignment be applied to real-world problem-solving or optimization challenges?
 
-
+the board would definetely need to be adjusted and added to in order to have a more sophisticated grid based game, even an extension of the 9x9 sudoku board. These algorithms, which use data structures to find a solution to a constrained problem, could be used for real world applications involving logistics, scheduling, or any scenario which has a set of constraints .
